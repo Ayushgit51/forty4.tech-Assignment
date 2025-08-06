@@ -13,7 +13,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Ayushgit51/forty4.tech-Assignment.git
 cd your-repo-name
 
 # 2. Install dependencies
@@ -31,7 +31,7 @@ node server.js
 ## 🛠 .env.example
 
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=Add Any URI of your database
 PORT=5000
 ```
 
@@ -73,7 +73,7 @@ user-api/
 
 ```bash
 curl -X POST http://localhost:5000/api/users \
-  -H "Content-Type: application/json" \
+  -H "Content-Type: body raw
   -d '{
     "name": "Jane Doe",
     "email": "jane@example.com",
@@ -95,7 +95,7 @@ curl -X POST http://localhost:5000/api/users \
 ### 📥 Get All Users
 
 ```bash
-curl http://localhost:5000/api/users
+using get http://localhost:5000/api/users
 ```
 
 ---
@@ -103,7 +103,7 @@ curl http://localhost:5000/api/users
 ### 📥 Get Single User
 
 ```bash
-curl http://localhost:5000/api/users/<user_id>
+using get http://localhost:5000/api/users/objectId
 ```
 
 ---
@@ -111,7 +111,7 @@ curl http://localhost:5000/api/users/<user_id>
 ### ✏️ Update User
 
 ```bash
-curl -X PUT http://localhost:5000/api/users/<user_id> \
+curl -X PUT http://localhost:5000/api/users/objectId
   -H "Content-Type: application/json" \
   -d '{
     "name": "Updated Name",
@@ -124,7 +124,7 @@ curl -X PUT http://localhost:5000/api/users/<user_id> \
 ### ❌ Delete User
 
 ```bash
-curl -X DELETE http://localhost:5000/api/users/<user_id>
+curl -X DELETE http://localhost:5000/api/users/objectId
 ```
 
 ---
